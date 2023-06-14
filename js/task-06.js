@@ -5,7 +5,8 @@ input.addEventListener("blur", onInputBlur);
 
 function onInputBlur(event) {
   const { value } = event.currentTarget;
-  if (value.length >= inputAtribute.dataset.length) {
+    if (value.length === (Number(inputAtribute.dataset.length)))
+  {
     input.classList.remove("invalid");
     input.classList.add("valid");
   } else {
